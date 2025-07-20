@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { FaInstagram, FaWhatsapp, FaFacebook } from "react-icons/fa";
-
 import Image from "next/image";
 import Logo from "../../public/Logo.png";
 
@@ -25,19 +23,19 @@ export default function Header() {
       <nav className="hidden md:flex items-center space-x-6 text-xl">
         {/* TEXTOS */}
         <a
-          href="#"
+          href="#services"
           className="relative text-gray-200 hover:text-transparent hover:bg-gradient-to-r hover:from-[#7969C8] hover:via-[#BC4BC4] hover:to-[#FF2CC0] hover:bg-clip-text transition duration-300"
         >
           Services
         </a>
         <a
-          href="#"
+          href="#projects"
           className="relative text-gray-200 hover:text-transparent hover:bg-gradient-to-r hover:from-[#7969C8] hover:via-[#BC4BC4] hover:to-[#FF2CC0] hover:bg-clip-text transition duration-300"
         >
           Projects
         </a>
         <a
-          href="#"
+          href="#contact"
           className="relative text-gray-200 hover:text-transparent hover:bg-gradient-to-r hover:from-[#7969C8] hover:via-[#BC4BC4] hover:to-[#FF2CC0] hover:bg-clip-text transition duration-300"
         >
           Contact
