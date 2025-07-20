@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={`${mitr.variable} antialiased`}>{children}</body>
+      <body className={`${mitr.variable} antialiased `} >{children}</body>
     </html>
   );
 }

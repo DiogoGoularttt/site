@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <div className="flex items-center justify-between mx-auto px-4 md:px-12 md:py-6 text-white relative">
+    <div className="flex items-center justify-between bg-[#101010] mx-auto px-4 md:px-12 md:py-4 text-white relative">
       {/* Logo */}
       <div>
         <Image src={Logo} alt="Logo" width={70} height={40} priority className="h-auto w-20 md:w-28" />
