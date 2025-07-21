@@ -13,17 +13,15 @@ export default function Services() {
       (entries) => {
         entries.forEach((entry, index) => {
           if (entry.isIntersecting) {
-            // Adiciona classe com delay em cascata
             setTimeout(() => {
               entry.target.classList.add("animate");
-            }, index * 150); // Delay de 150ms entre os cards
+            }, index * 150);
           } else {
-            // Remove a classe quando sai da tela
             entry.target.classList.remove("animate");
           }
         });
       },
-      { threshold: 0.2 }, // Dispara quando 20% do elemento está visível
+      { threshold: 0.4 },
     );
 
     cards.forEach((card) => observer.observe(card));
@@ -33,43 +31,43 @@ export default function Services() {
 
   return (
     <>
-      <h1 className="text-4xl sm:text-4xl md:text-6xl text-center font-bold icon-gradient">Nossos Serviços</h1>
+      <h1 className="text-4xl sm:text-4xl md:text-6xl text-center font-bold icon-gradient">Serviços</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-full gap-14 gap-y-20 md:gap-y-26 py-16 md:py-24">
         <Card
-          service="Web Development"
+          service="Desenvolvimento Web"
           icon={VscGlobe}
           iconClass="text-4xl text-blue-700"
-          text="We design and develop modern, responsive websites that elevate your brand and deliver an exceptional user experience across all devices."
+          text="Criamos sites modernos e responsivos que fortalecem sua marca e garantem uma experiência excelente em qualquer dispositivo."
         />
         <Card
-          service="Business Strategy"
+          service="Planejamento Estratégico"
           icon={VscGraph}
           iconClass="text-4xl text-green-700"
-          text="Our strategic planning helps you define clear goals, identify opportunities, and create sustainable growth for your business."
+          text="Planejamos estratégias para definir metas claras, identificar oportunidades e gerar crescimento sustentável para seu negócio."
         />
         <Card
-          service="Mobile Development"
+          service="Desenvolvimento Mobile"
           icon={RxMobile}
           iconClass="text-4xl text-indigo-700"
-          text="We build high-performance mobile applications for Android and iOS that are intuitive, scalable, and tailored to your users’ needs."
+          text="Construímos apps móveis rápidos e intuitivos para Android e iOS, adaptados às necessidades dos seus usuários."
         />
         <Card
           service="Copywriting"
           icon={MdOutlineContentCopy}
           iconClass="text-4xl text-red-700"
-          text="Compelling and persuasive content that captures attention, engages your audience, and drives them to take action."
+          text="Produzimos textos criativos e persuasivos que chamam a atenção, engajam e convertem o seu público."
         />
         <Card
-          service="Email Marketing"
+          service="E-mail Marketing"
           icon={MdOutlineMailOutline}
           iconClass="text-4xl text-teal-700"
-          text="Beautiful and effective email marketing templates designed to minimize the risk of ending up in SPAM filters."
+          text="Criamos modelos de e-mails bonitos e eficazes, projetados para evitar filtros de SPAM e alcançar mais pessoas."
         />
         <Card
-          service="Marketing & Reporting"
+          service="Marketing e Relatórios"
           icon={LuUsers}
           iconClass="text-4xl text-sky-700"
-          text="Comprehensive marketing strategies combined with insightful reporting to help you measure success and make data-driven decisions."
+          text="Desenvolvemos estratégias com relatórios claros para medir resultados e tomar decisões baseadas em dados."
         />
       </div>
     </>

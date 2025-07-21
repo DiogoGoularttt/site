@@ -8,10 +8,6 @@ html {
   font-family: var(--font-mitr), sans-serif;
 }
 
-body::-webkit-scrollbar {
-  width: 1px;
-}
-
 .icon-gradient {
   background: linear-gradient(90deg, #7969c8, #bc4bc4, #ff2cc0);
   -webkit-background-clip: text;
@@ -40,19 +36,17 @@ body::-webkit-scrollbar {
   transform: scale(1);
 }
 
-/* Cards começam invisíveis e deslocados */
 .card {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.5s ease-out, transform 0.8s ease-out;
 }
 
-/* Quando entram na tela, aparecem suavemente */
 .card.animate {
   opacity: 1;
   transform: translateY(0);
 }
 
 .shadow-card {
-  box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, 0.2); /* Exemplo básico */
+  box-shadow: 5px 5px 10px 4px rgba(108, 39, 118, 0.244); /* Exemplo básico */
 }
