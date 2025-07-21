@@ -1,8 +1,38 @@
+"use client";
+
+import { useEffect } from "react";
 import Header from "./Header";
 import Headline from "./Headline";
 import Services from "./Services";
 
 export default function Home() {
+  useEffect(() => {
+    const pageElement = document.querySelector(".page");
+
+    if (!pageElement) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+          } else {
+            entry.target.classList.remove("animate");
+          }
+        });
+      },
+      {
+        threshold: 0.4, // 40% visível
+      },
+    );
+
+    observer.observe(pageElement);
+
+    // Cleanup para evitar leaks
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
   return (
     <>
       <header className="w-full">

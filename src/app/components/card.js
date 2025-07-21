@@ -1,11 +1,10 @@
 import { MdStars } from "react-icons/md";
-import { CgWebsite } from "react-icons/cg";
 
 export default function Card(props) {
-  const Icon = props.icon; // Componente do ícone dinâmico
+  const Icon = props.icon;
 
   return (
-    <div className="flex flex-col justify-start bg-gray-200 max-w-[404px] rounded-[20px] shadow-card page">
+    <div className="card flex flex-col justify-start bg-gray-200 max-w-[404px] rounded-[20px] shadow-card">
       <div className="pt-[23px] pb-[32px]">
         <div className="px-[24px]">
           <div className="pb-4">{Icon && <Icon className={props.iconClass} />}</div>

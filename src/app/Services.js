@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Card from "./components/card";
 import { VscGlobe, VscGraph } from "react-icons/vsc";
 import { RxMobile } from "react-icons/rx";
@@ -5,6 +6,31 @@ import { MdOutlineContentCopy, MdOutlineMailOutline } from "react-icons/md";
 import { LuUsers } from "react-icons/lu";
 
 export default function Services() {
+  useEffect(() => {
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            // Adiciona classe com delay em cascata
+            setTimeout(() => {
+              entry.target.classList.add("animate");
+            }, index * 150); // Delay de 150ms entre os cards
+          } else {
+            // Remove a classe quando sai da tela
+            entry.target.classList.remove("animate");
+          }
+        });
+      },
+      { threshold: 0.2 }, // Dispara quando 20% do elemento está visível
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <h1 className="text-4xl sm:text-4xl md:text-6xl text-center font-bold icon-gradient">Nossos Serviços</h1>
