@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import Card from "./components/Card";
 import { VscGlobe, VscGraph } from "react-icons/vsc";
 import { RxMobile } from "react-icons/rx";
 import { MdOutlineContentCopy, MdOutlineMailOutline } from "react-icons/md";
 import { LuUsers } from "react-icons/lu";
+import Card from "./components/Card.js";
 
 export default function Services() {
   useEffect(() => {
