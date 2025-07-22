@@ -52,9 +52,9 @@ export default function Home() {
           <About />
         </div>
 
-        {/* <div id="projects" className="bg-[#fff] pt-8 md:py-22">
-          <h1>OI</h1>
-        </div> */}
+        <div id="projects" className="bg-[#fff] pt-8 md:py-22">
+          <h1>Em construção...</h1>
+        </div>
 
         {/* <div id="contact" className="flex bg-white py-32 max-w-7xl mx-auto">
           <h1>
