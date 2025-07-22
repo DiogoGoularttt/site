@@ -48,7 +48,7 @@ export default function Home() {
           <Services />
         </div>
 
-        <div id="projects" className="bg-[#101010] pt-8 md:pt-22">
+        <div id="projects" className="bg-[#101010] py-8 md:py-22 px-4">
           <About />
         </div>
 
