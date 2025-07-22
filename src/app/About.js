@@ -60,7 +60,7 @@ export default function About() {
             </div>
           </div>
 
-          <div>
+          <div className="bg-transparent">
             <Image src={Team} loading="lazy" alt="Equipe trabalhando" />
           </div>
         </div>
