@@ -3,7 +3,7 @@
 import { CiDollar, CiBookmarkCheck, CiAlignBottom } from "react-icons/ci";
 
 import Image from "next/image";
-import Team from "../../public/team.svg";
+import Team from "../../public/team.png";
 import { useEffect } from "react";
 
 export default function About() {
@@ -60,8 +60,8 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-transparent">
-            <Image className="bg-transparent" src={Team} loading="lazy" alt="Equipe trabalhando" />
+          <div>
+            <Image src={Team} loading="lazy" alt="Equipe trabalhando" />
           </div>
         </div>
       </div>
