@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Card from "./components/Card.js";
+import Card from "./components/Card";
 import { VscGlobe, VscGraph } from "react-icons/vsc";
 import { RxMobile } from "react-icons/rx";
 import { MdOutlineContentCopy, MdOutlineMailOutline } from "react-icons/md";

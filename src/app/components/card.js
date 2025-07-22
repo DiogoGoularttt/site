@@ -1,4 +1,4 @@
-import { IoAddCircleSharp } from "react-icons/io5";
+"use client";
 
 export default function Card(props) {
   const Icon = props.icon;
