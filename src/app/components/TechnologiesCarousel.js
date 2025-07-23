@@ -17,28 +17,23 @@ const logos = [
   { src: "/nodejs.svg", alt: "NodeJS" },
 ];
 
-export default function TechnologiesCarousel() {
-  const isMobile = useIsMobile();
+const duplicatedLogos = [...logos, ...logos]; // duplica
 
-  const size = isMobile ? 64 : 128;
+export default function TechnologiesCarousel() {
   return (
     <div className="pb-12">
       <div className="w-full overflow-hidden py-4 md:py-10 bg-gray-200">
         <div className="carousel-track">
-          {Array(4)
-            .fill(logos)
-            .flat()
-            .map((logo, index) => (
-              <div key={index} className="carousel-item relative" style={{ width: size, height: size }}>
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={size}
-                  height={size}
-                  className="object-contain grayscale hover:grayscale-0 transition duration-300"
-                />
-              </div>
-            ))}
+          {duplicatedLogos.map((logo, index) => (
+            <div key={index} className="carousel-item relative w-16 h-16 md:w-32 md:h-32">
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                fill
+                className="object-contain grayscale hover:grayscale-0 transition duration-300"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
