@@ -5,6 +5,7 @@ import Header from "./Header";
 import Headline from "./Headline";
 import Services from "./Services";
 import About from "./About";
+import Contact from "./Contact";
 
 export default function Home() {
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function Home() {
         <Header />
       </header>
       <main className="view">
-        <div className="flex flex-col justify-center items-center h-screen px-4 bg-[#101010]">
+        <div className="flex flex-col justify-center items-center h-screen md:px-4 bg-[#101010]">
           <Headline />
         </div>
 
@@ -52,8 +53,8 @@ export default function Home() {
           <About />
         </div>
 
-        <div id="projects" className="bg-[#fff] pt-8 md:py-22">
-          <h1>Em construção...</h1>
+        <div id="projects" className="bg-[#fff]">
+          <Contact />
         </div>
 
         {/* <div id="contact" className="flex bg-white py-32 max-w-7xl mx-auto">
