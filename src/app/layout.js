@@ -17,7 +17,7 @@ export const metadata = {
     siteName: "Fluxon Digital",
     images: [
       {
-        url: "/Share_image.png", // salve esta imagem em /public
+        url: "https://fluxondigital.com.br/og-image.png", // salve esta imagem em /public
         width: 1200,
         height: 630,
         alt: "Imagem de destaque da Fluxon Digital",
@@ -28,11 +28,10 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <body className={`${mitr.variable} antialiased `} >{children}</body>
+      <body className={`${mitr.variable} antialiased `}>{children}</body>
     </html>
   );
 }
