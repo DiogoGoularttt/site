@@ -23,19 +23,19 @@ export default function Header() {
           href="#services"
           className="relative text-gray-200 hover:text-transparent hover:bg-gradient-to-r hover:from-[#7969C8] hover:via-[#BC4BC4] hover:to-[#FF2CC0] hover:bg-clip-text transition duration-300"
         >
-          Services
+          Serviços
         </a>
         <a
           href="#projects"
           className="relative text-gray-200 hover:text-transparent hover:bg-gradient-to-r hover:from-[#7969C8] hover:via-[#BC4BC4] hover:to-[#FF2CC0] hover:bg-clip-text transition duration-300"
         >
-          Projects
+          Sobre nós
         </a>
         <a
           href="#contact"
           className="relative text-gray-200 hover:text-transparent hover:bg-gradient-to-r hover:from-[#7969C8] hover:via-[#BC4BC4] hover:to-[#FF2CC0] hover:bg-clip-text transition duration-300"
         >
-          Contact
+          Contato
         </a>
 
         <span>|</span>
@@ -90,10 +90,10 @@ export default function Header() {
 
         <ul className="flex flex-col items-center space-y-4 p-4" onClick={toggleMenu}>
           <a href="#services">
-            <li className="hover:bg-gray-700 p-2 rounded">Services</li>
+            <li className="hover:bg-gray-700 p-2 rounded">Serviços</li>
           </a>
           <a href="#projects">
-            <li className="hover:bg-gray-700 p-2 rounded">Projects</li>
+            <li className="hover:bg-gray-700 p-2 rounded">Sobre nós</li>
           </a>
           <a href="#contact">
             <li className="hover:bg-gray-700 p-2 rounded">Contact</li>
