@@ -89,15 +89,15 @@ export default function Header() {
         </div>
 
         <ul className="flex flex-col items-center space-y-4 p-4" onClick={toggleMenu}>
-          <a href="#services">
-            <li className="hover:bg-gray-700 p-2 rounded">Serviços</li>
-          </a>
-          <a href="#projects">
-            <li className="hover:bg-gray-700 p-2 rounded">Sobre nós</li>
-          </a>
-          <a href="#contact">
-            <li className="hover:bg-gray-700 p-2 rounded">Contact</li>
-          </a>
+          <li className="hover:bg-gray-700 p-2 rounded">
+            <a href="#services">Serviços</a>
+          </li>
+          <li className="hover:bg-gray-700 p-2 rounded">
+            <a href="#projects">Sobre nós</a>
+          </li>
+          <li className="hover:bg-gray-700 p-2 rounded">
+            <a href="#contact">Contato</a>
+          </li>
         </ul>
       </div>
     </div>
