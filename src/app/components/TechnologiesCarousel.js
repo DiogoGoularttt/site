@@ -33,7 +33,8 @@ export default function TechnologiesCarousel() {
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  fill
+                  width={size}
+                  height={size}
                   className="object-contain grayscale hover:grayscale-0 transition duration-300"
                 />
               </div>

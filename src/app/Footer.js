@@ -18,6 +18,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2 w-full max-w-68 text-center md:text-start">
           <h1 className="text-2xl font-semibold icon-gradient">Contato</h1>
           <a
+            href="mailto:contato@fluxondigital.com.br?subject=Contato%20pelo%20site&body=Olá%20Fluxon,%20gostaria%20de%20mais%20informações..."
             target="_blank"
             aria-label="Enviar email para Fluxon"
             className="flex items-center justify-center md:justify-start gap-4 text-xs leading-8 cursor-pointer"
@@ -25,6 +26,7 @@ export default function Footer() {
             <MdOutlineMailOutline size={20} className="icon-gradient" />
             contato@fluxondigital.com.br
           </a>
+
           <a
             href="https://wa.me/5551986526016"
             aria-label="Chamar Fluxon no Whatsapp"
