@@ -9,8 +9,25 @@ const mitr = Mitr({
 
 export const metadata = {
   title: "Fluxon Digital",
-  description: "Innovation Powered by Experience!",
+  description: "Innovation Powered by Technology!",
+  openGraph: {
+    title: "Fluxon Digital",
+    description: "Innovation Powered by Technology!",
+    url: "https://fluxondigital.com.br/", // troque pela sua URL real
+    siteName: "Fluxon Digital",
+    images: [
+      {
+        url: "/Share_image.png", // salve esta imagem em /public
+        width: 1200,
+        height: 630,
+        alt: "Imagem de destaque da Fluxon Digital",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
